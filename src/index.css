@@ -1,0 +1,77 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* raleway-regular - latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), url('./fonts/raleway-v22-latin-regular.woff2') format('woff2'), 
+       local('Raleway'), url('./fonts/raleway-v22-latin-regular.woff') format('woff');        
+}
+/* amaranth-regular - latin */
+@font-face {
+  font-family: 'Amaranth';
+  font-style: normal;
+  font-weight: 400;  
+  src: local('Amaranth'), url('./fonts/amaranth-v11-latin-regular.woff2') format('woff2'), 
+       local('Amaranth'), url('./fonts/amaranth-v11-latin-regular.woff') format('woff');  
+}
+
+body {
+  margin: 0;
+  font-family: 'Raleway';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+button {
+  background: #09f;
+  border: 0;
+  color: #fff;
+  padding: 8px 16px;
+  font-size: 16px;
+  border-radius: 0 10px 0 0;
+}
+
+a {
+  color: #09f;
+  font-size: 32px;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  display: flex;
+  margin: 0 auto 30px;
+  justify-content: center;
+}
+
+input[type=text] {
+  border-radius: 0 0 0 10px;
+  font-size: 16px;
+  border: none;
+  padding: 4px 16px;
+}
+
+button:hover {
+  cursor: pointer;
+}
